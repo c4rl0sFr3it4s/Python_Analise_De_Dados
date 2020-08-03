@@ -1,0 +1,48 @@
+
+'''
+alfa = re.match(r'[0-9]+', '1234567890')
+print(alfa.group(0))
+
+ usando um padrão de texto 
+alfa = re.compile(r'[0-9]+')
+resp = alfa.match('0123456789')
+print(resp.group(0))
+'''
+
+metas caracteres 	mnemônico
+.			ponto
+[]			lista
+[^]			lista negada
+?			opçional
+*			asteristico
++ 			mais
+{}			chaves
+^			circunflexo
+$			cifrão
+\b			borda
+\ 			escape
+|			OU
+()			grupo
+\1			retrovisor
+
+REPRESENTANTES
+meta	mnemonico	função
+.	ponto		um caractere qualquer
+[]	lista		lista de caracteres permitidos
+[^]	lista negada	lista de caracteres proibidos
+QUANTIFICADORES
+meta	mnemônicos	função
+?	opcional	zero ou um
+*	asteristicos 	zero um ou mais
++	mais 		um ou mais
+{n, m}	chaves 		de n até m
+ÂNCORAS
+meta	mnemônico	função
+^	circunflexo	início da linha
+$	cifrão 		fim da linha
+\b	borda 		início ou fim da palavra
+OUTROS
+meta	mnemônico	função
+\c	escape		torna literal ou caractere c
+|	ou 		ou um ou outro
+\1...\9	retrovisor 	texto casado nos grupos 1..9

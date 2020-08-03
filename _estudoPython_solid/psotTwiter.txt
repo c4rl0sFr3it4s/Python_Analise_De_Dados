@@ -1,0 +1,21 @@
+# postando no twiter
+import oauth2
+import json
+import urllib
+
+
+query = str(input('Novo Twiter: '))
+query_codificada = urllib.parse.quote(query, safe='')
+consumer_key = '###########'
+consumer_secret = '????????'
+token_key = '!!!!!!!!!!'
+token_secret = '+++++++++'
+consumer = oauth2.Consumer(consumer_key, consumer_secret)
+token = outh2.Token(token_key, token_secret)
+cliente + oauth2.Client(consumer, token)
+# cliente.request por padrão é um metodo GET
+requisicao = cliente.requests('http://api.twiter.com/1.1/sstatuses/update.json?status='+ query_codificada, method='POST')
+# requisicao_objeto = json.loads(requisicao)
+decodificar = requisicao[1].decoder()
+objeto = json.loads(decodificar)
+print(objeto)

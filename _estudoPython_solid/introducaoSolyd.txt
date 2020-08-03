@@ -1,0 +1,10 @@
+﻿#variaveis de ambiente
+a = 1
+b = 1.2
+c = 'G'
+#saida de alguma entrada no monitor
+print('Hello word!')
+'''
+indica o uso de uma função, esta imprimie uma string que é um texto
+
+'''

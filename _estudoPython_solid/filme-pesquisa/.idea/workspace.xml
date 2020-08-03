@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d79c0f7a-85c8-45af-b185-19bbb0fc8ea8" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Y7tLa5MXnXIvapdjSf2I5kVJkA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RunManager" selected="Python.pesquisa_filme">
+    <configuration name="lista-dicionario" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="filme-pesquisa" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lista-dicionario.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pesquisa_filme" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="filme-pesquisa" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pesquisa_filme.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.pesquisa_filme" />
+        <item itemvalue="Python.lista-dicionario" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d79c0f7a-85c8-45af-b185-19bbb0fc8ea8" name="Default Changelist" comment="" />
+      <created>1582305404410</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582305404410</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1345" height="228" key="GridCell.Tab.0.bottom" timestamp="1582493265668">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="228" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.768.1024@0.0.1366.728" timestamp="1582493265668" />
+    <state width="1345" height="214" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582315089886" />
+    <state width="1345" height="228" key="GridCell.Tab.0.center" timestamp="1582493265668">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="228" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.768.1024@0.0.1366.728" timestamp="1582493265668" />
+    <state width="1345" height="214" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1582315089886" />
+    <state width="1345" height="228" key="GridCell.Tab.0.left" timestamp="1582493265668">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="228" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.768.1024@0.0.1366.728" timestamp="1582493265668" />
+    <state width="1345" height="214" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1582315089886" />
+    <state width="1345" height="228" key="GridCell.Tab.0.right" timestamp="1582493265668">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="228" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.768.1024@0.0.1366.728" timestamp="1582493265668" />
+    <state width="1345" height="214" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1582315089886" />
+    <state x="230" y="19" key="SettingsEditor" timestamp="1582488150685">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="230" y="19" key="SettingsEditor/0.0.1366.728/1366.0.768.1024@0.0.1366.728" timestamp="1582488150685" />
+    <state x="390" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1582485005650">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="390" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.768.1024@0.0.1366.728" timestamp="1582485005650" />
+    <state x="390" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1582315362100" />
+    <state x="390" y="0" width="585" height="728" key="find.popup" timestamp="1582310937726">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="390" y="0" width="585" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1582310937726" />
+  </component>
+</project>

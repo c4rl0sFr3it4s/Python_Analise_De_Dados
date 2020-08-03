@@ -1,0 +1,117 @@
+mineração de dados.
+O que o twiter promove em requisições, precisa estudar sobre 
+o twiter.
+twiter API.
+Requisição REST vai te retornar um json.
+Authenticação Oath2, uma authenticação utilizada na web.
+informações sobre requisição
+Entra no developer twiter e cria uma aplicação, esta aplicação
+que vai te dar acesso a API.
+No twiter a resposta veio duas tuplas o tipo em string
+que se localiza no indice [0].
+e a resposta em byte localiza no inidice [1], para 
+o python o byte corresponde a 1 caractere.
+No caso do exercicio como precisamos da resposta do 
+twiter precisou transformar byte em string usando uma
+função decoder.
+
+consumer key -> nome do usuario
+consumer secret -> senha
+Precisa de um novo token
+acess token -> usuario de acesso
+secret token - >senha
+
+#python
+import oauth2 # um modulo pronto para authenticação
+import json
+import pprint # formata o print
+import urllib.parse # codifica caracteres especias para url
+
+
+consumer_key = 'chaveCriptografada'
+consumer_secret = 'senhaCriptografada'
+token_key = 'tokenChave'
+token_secret = 'tokenSenha'
+
+# interando com o usuario
+query = str(input('Pesquisa: '))
+#codificando caractere especial, safe='', parametro para segurança
+query_codificada = urllib.parse.quote(query, safe='')
+
+# criando objeto consumidor
+consumer = oauth2.Consumer(consumer_key, consumer_secret)
+# criando um token
+token = oauth2>Token(token_key, token_secret)
+# criando o cliente de conexão
+# apartir do cliente eu consigo fazer as requisições que fazia com requests
+cliente = oauth2.Client(consumer, token)
+
+# passar a url pesquisar no twiter, na documentacao, search api, ?q=a pesquisa
+requisicao = cliente.requests('http://api.twiter.com/1.1/search/tweets.json?q='+ query_codificada+ '&lang=pt')
+# transformando o json em objeto do python
+requisicao_objeto = json.loads(requisicao)
+# print(requisicao_objeto)
+'''
+TypeErro: the JSON object ,must be str, not 'tuple'
+O objeto json precisa ser uma string não uma tuple.
+Na requisicao vem duas informacoes
+print(requisicao_objeto[0])
+Não tem resposta - ela é do tipo resposta
+# print(requisicao_objeto[1])
+Não pode estar em Bytes - é do tipo byte
+A requisicao é o seguinte.
+print(type(requisicao))
+<class, tuple>
+Ele indica que é uma tupla, tem duas coisas que vem nesta requisicao
+a resposta que esta tudo ok, e a outra é as informacoes.
+print(type(requisicao_objeto[0]))
+<class, 'httplib2.Response'>
+Tipo resposta do servidor como ok.
+print(type(requisicao_objeto[1]))
+<class, byte>
+Tipo byte, obyte é parecido com texto só que é byte puro ele não
+reconhece o \n, no python3 é direfente e precisa fazer a convensão de byte
+para texto ou texto para byte depende do que voce quer trabalhar precisa fazer
+um decode
+'''
+# resolucao, decodificando
+decodificar = requisicao[1].decoder()
+# transformando em objeto python
+objeto = json.loads(decodificar)
+
+'''
+ver que é muito complexo não cinsegue enxegar direito
+no python existe uma biblioteca chamada pprint
+pretty print, imprime bonito
+'''
+pprint.pprint(objeto['statuses'][0]['user']['screen_name'])
+pprint.pprint(objeto['statuses'][0]['text'])
+# imprime tudo aninhado.
+# analisar a saida
+# começo se é um dicionário, lista, tupla
+# cada twites é uma lista é um indice
+
+'''
+pegando vários twiter
+twittes = objeto['statuse']
+for twit in twittes:
+	#dentro do objeto statuses tem varios twiters
+	print(twit['user']['screen_name'])
+	print(twit['text'])
+
+'''
+#instalando no console
+pip install Oauth2
+
+
+
+
+
+
+
+
+
+
+
+
+

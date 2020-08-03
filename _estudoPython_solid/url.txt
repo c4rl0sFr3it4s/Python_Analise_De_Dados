@@ -1,0 +1,2 @@
+https://pt.stackoverflow.com/questions/307126/como-adicionar-elementos-de-uma-lista-em-um-dicion%C3%A1rio-em-python3
+https://www.devmedia.com.br/como-trabalhar-com-listas-em-python/37460

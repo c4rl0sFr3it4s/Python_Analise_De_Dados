@@ -1,0 +1,191 @@
+https://www.youtube.com/watch?v=AT17Ht87UKI
+Expressões regulares são importantes pois trabalhar com strings
+encontrar padrões em textos, e fazer combinações, facilita isto
+pode definir um padrão e este padrão pode ser utilizado em uma palavras
+ou em palavras, ele limpe de todas as maneiras.
+
+caracteres especiais para patterns
+.   => qualquer caractere
+[]  => lista de caracteres
+?   => anterior pode existir ou não
+.*  => qualquer coisa
+{x} => anterior aparece x vezes
+$   => fim da linha
++   => anterior ao menos uma vezes
+(xy) => criar grupos
+^    => começo da linha
+\    => escapa ou meta
+|    => OU
+[^]  => Lista negada, composição de 2 caracteres
+9?[0-9]{4}-[0-9]{4} => número de telefone ex: 8923-9381
+[m|m][i|u|ü]||?er   => Miler, muler, müller, Muler, usando lista
+(S{O|so|So|Os|OS|os)=>Buscaria variações para SO ou OS
+
+
+regexpal.com
+procuramos no regexpal com caracteres especiais o conjunto
+para que match {combine}.
+Apartir do inicio que colocamos . ele mostra o número
+de partidas no canto inferior direito, que é a relação
+que temos na string com relativos espaçõs
+
+EX:
+live de python
+regular expression
+/live./g
+. é um padrao em expressão regular.
+live. seleciona os caracteres live , com espaço, dentro do 
+padrao live.
+
+/[lipy]/g
+[] lista igual a do python, os caracteres que forem inseridos
+dentro desta lista, ele vai pegar todos os caracteres dentro
+da lista e trás.
+
+? pode existir ou não
+
+/la?i/g
+Live
+Livi
+laive
+
++ pega do ultimo caractere e espandir
+/La?ive+/g
+
+Liveeeeeeeeeeeeeeeeeeeeeeeeeeeee
+() => grupo
+|  => OU
+?  => pode existir ou não
+/(M|m)(i|ü)ll?er/g
+Miler
+Miller
+Müller
+miller
+
+Listas
+meta 		faz o que?
+[0-9]|\d	acha todos os números
+[a-z]|\w	acha todas as letras minúsculas
+[^0-9]|\D	acha tudo que não seja número
+[^a-z]|\W	acha tudo que não sejam letras
+
+[0-9] ele usa a tabela ascii para fazer isto tipo um slice em
+python match ele combina, em intervalo.
+pode expandir
+
+numero de telefone
+99999888
+
+\d ele pega todos os números individualmente.
+[0-9] ele pegaria todos os números
+[^0-9] se negasse ele pegaria o que esta fora dos digitos
+[0-9]+ ele pega o anterior e o todo como um bloco.
+[^0-9]+
+São padrões muitos interessantes que no começo pareçe dificil
+de intender mais com o tempo fica facil.
+As divisões na plataforma de regex a divisão ele está pegando
+1 por 1, quando ele marca totalmente ele está pegando o bloco.
+
+Regex com python
+import re
+in[2]: re.compile('Eduard')
+out[2]: re.compile(r'Eduard', re.UNICODE)
+'''
+COMO OBJETOS => um catadão de funções e constantes
+compile => compila um padrão de texto, encontrar um
+padrão de texto que seja, posso armazenar em uma variavel
+e buscar em string.
+
+search => procura uma expressão em qualquer posição de uma
+string, como se estivesse fazendo um operador de in do python
+vai ver todas as posições e retorna True.
+in[6]: a = re.search('a', 'eduardo')
+Existe a in eduardo.
+span=(3 ,4) => periodo 3 e o 4, começa no 3 e vai até o 4
+a.end()
+Onde ele acaba
+a.start()
+Onde ele começa
+a.span()
+(3, 4)
+
+match[0]/fullmatch[1]
+procura uma expressão no início de uma string(startswith => começa com)
+procura uma expressão exatamente igual;
+In[13]: re.match('a', 'eduardo')
+a in eduardo, ele não retorna nada, ele não é verboso.
+Se der um type
+In[14]: type(re.match('a', 'eduardo'))
+NoneType, Nenhum tipo
+match ele funciona no começo da string e se pareçe com a
+função startswith.
+re.match('a', 'aeduardo'), ele daria uma combinação por o padrão 
+ser aeduardo.
+
+fullmatch, procura a mesma coisa com o match tudo que começa
+com aquele padrão ele bate ali e da um match.
+
+split
+dada uma expressão, fatia os dados
+Não é como o comum de dividir do python
+In[15]:'eduardo'.split('a')
+['edu', 'rdo']
+In[16]:re.split(r'.ar', 'eduardo')
+Pode ser passado um pattern, o . é qualquer caracter para ele, 
+com RAW.
+Out[16]:['ed', 'do']
+Quando passa opções ele não come a string, ele fatia.
+In[23]: re.findall('a', 'aaaaaaaaaa')#pega string e tenta casar o padrão 
+que tem no começo aonde de match.
+Out[23]: ['a','a','a','a','a','a',]
+Dividiu todos os a
+
+In[24]: re.findall('.a', 'aaaaaaa')
+Out[24]: ['aa', 'aa','aa','aa', ]
+Combinações casando . todos os caracteres
+
+In[25]: re.findall('.a?e', 'aaaaaaae')
+Out[25]: ['aa', 'aa', 'aae']
+
+DEPOIS QUE EU COMPILO EU USO OS METODOS
+COMO METODOS => objetos com regex compiladas e que apresentam
+alguns métodos.
+search
+match
+fullmatch
+findall/finditer
+groups
+pattern
+Dentro dos match que eu conseguir obter dentro da primeira
+sentença.
+In[26]: re.seach('.', 'Python')
+Out[26]: <Sre.SRE_Match object; span=(0, 1), match='P'
+In[27]: a = re.search('.', 'Python')
+''' colocando em uma variável a agora o match tem metodos'''
+end
+endpos
+expand
+group
+groupdict
+groups => a.groups(0)
+lastfroup
+lastindex
+pos
+re
+regs
+span
+statart
+string
+
+
+'''
+
+
+
+
+
+
+
+
+
+
